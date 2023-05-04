@@ -1,0 +1,145 @@
+h1,
+        h2.band-name {
+            font-family: Rockwell;
+        }
+
+        body {
+            background: linear-gradient(rgba(78, 10, 117, 1), rgba(36, 3, 55, 1), black);
+            background-attachment: fixed;
+        }
+
+        * {
+            color: #e3dac9;
+        }
+
+        h1#title-web {
+            margin-bottom: 40px;
+        }
+
+        section.Tame-Impala>div {
+            
+            display: flex
+        }
+
+
+        .album {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        p.band-description {
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            text-align: justify;
+            text-justify: inter-word;
+            font-family: Rockwell;
+            line-height: 2.5;
+            font-size: 20px;
+        }
+
+        #impala-present-image {
+            border-radius: 30px;
+        }
+
+        div.band-separation {
+            width: 100px;
+            background-color: rgba(0, 0, 0, 0, 0.1);
+
+        }
+
+        span.band-genres {
+            height: 15px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            
+            border-radius: 5px;
+            border: 1px rgba(131, 84, 158, 0.2);
+            padding: 5px;
+            background-color: rgba(131, 84, 158, 0.4);
+        }
+
+        .flex-genres-box {
+            display: flex;
+            margin-top: 0px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            text-align: justify;
+            text-justify: inter-word;
+            font-family: Rockwell;
+            
+            
+            width: 700px;
+
+
+        }
+
+        .genres-text {
+            width: 17%;
+            font-size: 20px;
+
+
+        }
+
+        .genres-list {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            justify-content: flex-start;
+            width: 500px;
+            font-size: 16px;
+
+        }
+
+        .band-container {
+
+            border-radius: 25px;
+            border: 1px solid rgba(131, 84, 158, 0.01);
+            margin: 2px;
+            background-color: rgba(131, 84, 158, 0.4);
+        }
+        
+    /*@media only screen and (max-width: 600px){ 
+        #impala-present-image{width: 450px;}
+        .band-complete-tab{  display: flex;
+            flex-direction: row;
+          }
+        }*/
+
+        * {
+            box-sizing: border-box;
+          }
+          
+          .flex-container {
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            text-align: center;
+          }
+          
+          .flex-item-left {
+            background-color: #f1f1f1;
+            padding: 10px;
+            flex: 50%;
+          }
+          
+          .flex-item-right {
+            background-color: dodgerblue;
+            padding: 10px;
+            flex: 50%;
+          }
+          
+          /* Responsive layout - makes a one column-layout instead of two-column layout */
+          @media (max-width: 800px) {
+        
+            section.Tame-Impala>div {
+            
+                    display: flex;
+                    flex-direction: column;
+                }
+            .band-when-collapsed{
+                
+            } 
+            } 
