@@ -52,7 +52,7 @@ span.band-genres {
   margin-top: 0px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   text-align: justify;
   text-justify: inter-word;
   font-family: Rockwell;
@@ -79,8 +79,8 @@ span.band-genres {
   border: 1px solid rgba(131, 84, 158, 0.01);
   margin: 2px;
   background-color: rgba(131, 84, 158, 0.4);
-  height: 288px;
-  margin-left: 10px;
+
+  margin-left: 100px;
 }
 
 /*@media only screen and (max-width: 600px){ 
@@ -103,6 +103,7 @@ span.band-genres {
   .band-container {
     width: 500px;
     margin-right: 10px;
+    margin-left: 0;
   }
   .band-name {
     text-align: center;
