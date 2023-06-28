@@ -204,9 +204,13 @@ section.Monolink > div {
   width: 800px;
   height: 300px;
 }
-#Monolink-present-image {
+.Monolink1 {
   border-radius: 30px;
 }
+.Monolink2{
+  display: none;
+}
+
 
 .carrito-titulo {
   font-family: Rockwell;
@@ -339,24 +343,34 @@ input::-webkit-inner-spin-button {
   #impala-present-image {
     width: 500px;
     margin-right: 10px;
+    height: 300px;
+  }
+  .Monolink1{
+    display: none;
+  }
+
+  .Monolink2{
+    display: block;
+    border-radius: 30px;
   }
   .Albums-Merch-Title {
-    width: 800px;
+    width: 1200px;
   }
   .Albums-Merch-cube{
-    margin-left: 50px;
-    width: 700px;
-    height: 700px;
+    margin-left: 90px;
+    width: 1000px;
+    height: 800px;
   }
   .Albums-Merch-Flex {
-    margin-top: 30px;
+    margin-left: 150px;
+    
     display: flex;
     flex-wrap: wrap;
-    align-content:center;
-    justify-content: space-around;
+    align-content:space-around;
+    justify-content: space-evenly;
     border-radius: 0px;
-    width: 100%;
-    height: 100%;
+    width: 750px;
+    height: 800px;
   }
   .band-container-monolink {
     border-radius: 25px;
@@ -364,11 +378,17 @@ input::-webkit-inner-spin-button {
     margin: 2px;
     background-color: rgba(131, 84, 158, 0.4);
     margin-left: 10px;
-    width: 700px;
-    height: 300px;
+    width: 500px;
+    height: 360px;
   }
   .Tit-merch{
-    width: 800px;
+    width: 1200px;
     text-align: center;
+  }
+  h1.bandname{
+    width: 100px;
+  }
+  .container-complete{
+    margin-left: 90px;
   }
 }
