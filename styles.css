@@ -14,7 +14,6 @@ body {
 
 * {
   color: #e3dac9;
-  
 }
 
 h1#title-web {
@@ -25,7 +24,6 @@ h1#title-web {
 
 section.Tame-Impala > div {
   display: flex;
-  
 }
 
 p.band-description {
@@ -207,10 +205,9 @@ section.Monolink > div {
 .Monolink1 {
   border-radius: 30px;
 }
-.Monolink2{
+.Monolink2 {
   display: none;
 }
-
 
 .carrito-titulo {
   font-family: Rockwell;
@@ -291,7 +288,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.carr-cant-input{
+.carr-cant-input {
   border: 1px solid rgba(131, 84, 158, 0.01);
   height: 40px;
   border-radius: 5px;
@@ -315,7 +312,7 @@ input::-webkit-inner-spin-button {
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
-  #Titulo-sitio{
+  #Titulo-sitio {
     width: 500px;
     justify-content: center;
   }
@@ -327,7 +324,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     flex-direction: column;
   }
-  
+
   .band-container-impala {
     width: 500px;
     margin-right: 10px;
@@ -335,9 +332,10 @@ input::-webkit-inner-spin-button {
     height: 300px;
   }
   .band-name {
-    margin-top: 20px;
+    margin-top: 60px;
+    margin-bottom: 40px;
     text-align: center;
-    width: 500px;
+    width: 1200px;
   }
   #title-web {
     text-align: center;
@@ -348,28 +346,28 @@ input::-webkit-inner-spin-button {
     margin-right: 10px;
     height: 300px;
   }
-  .Monolink1{
+  .Monolink1 {
     display: none;
   }
 
-  .Monolink2{
+  .Monolink2 {
     display: block;
     border-radius: 30px;
   }
   .Albums-Merch-Title {
     width: 1200px;
   }
-  .Albums-Merch-cube{
+  .Albums-Merch-cube {
     margin-left: 90px;
     width: 1000px;
     height: 800px;
   }
   .Albums-Merch-Flex {
     margin-left: 150px;
-    
+
     display: flex;
     flex-wrap: wrap;
-    align-content:space-around;
+    align-content: space-around;
     justify-content: space-evenly;
     border-radius: 0px;
     width: 750px;
@@ -384,14 +382,14 @@ input::-webkit-inner-spin-button {
     width: 500px;
     height: 360px;
   }
-  .Tit-merch{
+  .Tit-merch {
     width: 1200px;
     text-align: center;
   }
-  h1.bandname{
-    width: 100px;
+  h1.bandname {
+    width: 1200px;
   }
-  .container-complete{
+  .container-complete {
     margin-left: 90px;
   }
   .break1 {
@@ -411,6 +409,20 @@ input::-webkit-inner-spin-button {
     height: 150px;
     display: flex;
     justify-content: center;
-    margin-left: 0px;
+    margin-left: 10px;
+  }
+  .band-name-div {
+    width: 1200px;
+    text-align: center;
+  }
+  .carrito-titulo {
+    width: 1200px;
+    text-align: center;
+  }
+  .carr-fila {
+    display: flex;
+    margin-left: 90px;
+    width: 1125px;
+    
   }
 }
