@@ -41,14 +41,6 @@ addToCartButtons.forEach(function (button) {
 });
 
 
-//restar items
-
-
-
-//calcular el monto total
-//sumo todos los precios y los multiplico por cantidad de items
-//lo reflejo en la UI
-
 
 
 //actualizar items en el carrito
@@ -98,15 +90,6 @@ function updateCart(){
         console.log(items)
       });
     });
-
-
-
-    //quantity editor
-    //fijate de copiar lo de arriba de remove functionality
-    //si toco el item de quantity (usar un event de cambios en el input)
-    //actualizar la lista de items usando el find
-    //correr update cart para que se actualize el html
-
 
 
 }

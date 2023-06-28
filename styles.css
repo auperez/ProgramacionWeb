@@ -265,7 +265,38 @@ section.Monolink > div {
   border-radius: 15px;
   border-bottom: 10px rgba(131, 84, 158, 0.4);
 }
+.btn-danger {
+  color: white;
+  background-color: #f75e5e;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  height: 30px;
+  font-family: Rockwell;
+}
 
+.btn-danger:hover {
+  background-color: #cc4c4c;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.carr-cant-input{
+  border: 1px solid rgba(131, 84, 158, 0.01);
+  height: 40px;
+  border-radius: 5px;
+  width: 40px;
+  font-family: Rockwell;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgba(131, 84, 158, 0.4);
+  text-align: center;
+  margin-right: 100px;
+}
 /*@media only screen and (max-width: 600px){ 
         #impala-present-image{width: 450px;}
         .band-complete-tab{  display: flex;
