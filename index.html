@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>God Music Taste</title>
-    <link rel="stylesheet" href="./caa.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
@@ -54,7 +54,7 @@
                     <h3 class="nombre-producto">INNERSPEAKER<br>VINYL</h3>
                     <p class="precio">$25.00</p>
                     <p class="btnwrap">
-                        <button type="button" class="button" onclick="suma(25)">
+                        <button type="button" class="button add-to-cart">
                             ADD TO 🛒
                         </button>
                     </p>
@@ -66,7 +66,7 @@
                     <h3 class="nombre-producto">CURRENTS<br>VINYL</h3>
                     <p class="precio">$25.00</p>
                     <p class="btnwrap">
-                        <button type="button" class="button" onclick="suma(25)">
+                        <button type="button" class="button add-to-cart">
                             ADD TO 🛒
                         </button>
                     </p>
@@ -78,7 +78,7 @@
                     <h3 class="nombre-producto">LONERISM<br>VINYL</h3>
                     <p class="precio">$25.00</p>
                     <p class="btnwrap">
-                        <button type="button" class="button" onclick="suma(25)">
+                        <button type="button" class="button add-to-cart">
                             ADD TO 🛒
                         </button>
                     </p>
@@ -90,7 +90,7 @@
                     <h3 class="nombre-producto">THE SLOW RUSH<br>VINYL</h3>
                     <p class="precio">$25.00</p>
                     <p class="btnwrap">
-                        <button type="button" class="button" onclick="suma(25)">
+                        <button type="button" class="button add-to-cart">
                             ADD TO 🛒
                         </button>
                     </p>
@@ -102,7 +102,7 @@
                     <h3 class="nombre-producto"> SHOW POSTER</h3>
                     <p class="precio">$20.00</p>
                     <p class="btnwrap">
-                        <button type="button" class="button" onclick="suma(20)">
+                        <button type="button" class="button add-to-cart">
                             ADD TO 🛒
                         </button>
                     </p>
@@ -114,7 +114,7 @@
                     <h3 class="nombre-producto"> RUSHIUM PEN AND PAD</h3>
                     <p class="precio">$5.00</p>
                     <p class="btnwrap">
-                        <button type="button" class="button" onclick="suma(5)">
+                        <button type="button" class="button add-to-cart">
                             ADD TO 🛒
                         </button>
                     </p>
@@ -164,8 +164,8 @@
                     <h3 class="nombre-producto">AMNIOTIC<br>VINYL</h3>
                     <p class="precio">$29.99</p>
                     <p class="btnwrap">
-                        <button type="button" class="button" onclick="suma(29.99)">
-                           ADD TO 🛒
+                        <button type="button" class="button add-to-cart">
+                            ADD TO 🛒
                         </button>
                     </p>
                 </div>
@@ -176,7 +176,7 @@
                     <h3 class="nombre-producto">UNDER DARKENING SKIES<br>VINYL</h3>
                     <p class="precio">$34.99</p>
                     <p class="btnwrap">
-                        <button type="button" class="button" onclick="suma(34.99)">
+                        <button type="button" class="button add-to-cart">
                             ADD TO 🛒
                         </button>
                     </p>
@@ -188,7 +188,7 @@
                     <h3 class="nombre-producto">RETURN TO OZ + FATHER OCEAN<br> REMIX VINYL</h3>
                     <p class="precio">$19.99</p>
                     <p class="btnwrap">
-                        <button type="button" class="button" onclick="suma(19.99)">
+                        <button type="button" class="button add-to-cart">
                             ADD TO 🛒
                         </button>
                     </p>
@@ -200,7 +200,7 @@
                     <h3 class="nombre-producto">MONOLINK<BR>BANDANA</h3>
                     <p class="precio">$19.99</p>
                     <p class="btnwrap">
-                        <button type="button" class="button" onclick="suma(19.99)">
+                        <button type="button" class="button add-to-cart">
                             ADD TO 🛒
                         </button>
                     </p>
@@ -212,32 +212,48 @@
                     <h3 class="nombre-producto">BUCKET HAT<BR> TIE DYE</h3>
                     <p class="precio">$19.99</p>
                     <p class="btnwrap">
-                        <button type="button" class="button" onclick="suma(19.99)">
+                        <button type="button" class="button add-to-cart">
                             ADD TO 🛒
                         </button>
                     </p>
                 </div>
                 <div class="Boton-flex">
-                <img class="tee-img"
-                    src="https://cdn.shopify.com/s/files/1/0275/8488/8880/products/BACK_1024x1024@2x.jpg?v=1674844226"
-                    alt="alternatetext">
+                    <img class="tee-img"
+                        src="https://cdn.shopify.com/s/files/1/0275/8488/8880/products/BACK_1024x1024@2x.jpg?v=1674844226"
+                        alt="alternatetext">
                     <h3 class="nombre-producto">UNDER DARK<BR> EMBROIDERED TEE</h3>
-                        <p class="precio">$49.99</p>
-                        <p class="btnwrap">
-                            <button type="button" class="button" onclick="suma(49.99)">
-                                ADD TO 🛒
-                            </button>
-                        </p>
-                    </div>
+                    <p class="precio">$49.99</p>
+                    <p class="btnwrap">
+                        <button type="button" class="button add-to-cart">
+                            ADD TO 🛒
+                        </button>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
     <h2 class="carrito-titulo">CART</h2>
-            <div class="carr-fila">
-                <span class="carr-prod carr-tit carr-col">ITEM</span>
-                <span class="cart-precio carr-tit carr-col">PRICE</span>
-                <span class="cart-cant carr-tit carr-col">QUANTITY</span>
+    <div class="carr-fila">
+        <span class="carr-prod carr-tit carr-col">ITEM</span>
+        <span class="carr-precio carr-tit carr-col">PRICE</span>
+        <span class="carr-cant carr-tit carr-col">QUANTITY</span>
+    </div>
+    <div class="carr-items">
+        <!-- <div class="carr-fila">
+            <div class="carr-prod carr-col">
+                <img class="carr-prod-img" src="https://i1.sndcdn.com/artworks-000360605202-mvousi-t500x500.jpg" width="100" height="100">
+                <span class="carr-prod-tit">AMNIOTIC VINYL</span>
             </div>
+            <span class="carr-precio carr-col">$29.99</span>
+            <div class="carr-cant carr-col">
+                <input class="carr-cant-input" type="number" value="1">
+                <button class="btn btn-danger remove-from-cart" type="button">REMOVE</button>
+            </div>
+        </div> -->
+    </div>
+
 </body>
+
+<script src="./main.js"></script>
 
 </html>
