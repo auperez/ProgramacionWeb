@@ -1,31 +1,50 @@
-h1,
-h2.band-name {
-  font-family: Rockwell;
-}
-h1 {
-  margin-top: 70px;
-  font-size: 2.3em;
-}
-
-body {
-  background: linear-gradient(rgba(78, 10, 117, 1), rgba(36, 3, 55, 1), black);
-  background-attachment: fixed;
-}
-
-* {
-  color: #e3dac9;
-}
-
+/* Customizacion del titulo de la web*/
 h1#title-web {
   font-size: 3em;
   text-align: center;
   margin-bottom: 0px;
+  width: 1200px;
+}
+/* Customizacion de los h1 y el h2 de los nombres de las bandas */
+h2,
+h1.band-name {
+  font-family: Rockwell;
+}
+/* Customizacion de los h1 */
+h1 {
+  margin-top: 70px;
+  font-size: 2.3em;
+  font-family: Rockwell;
+}
+/* Customizacion del background de la página */
+body {
+  background: linear-gradient(rgba(78, 10, 117, 1), rgba(36, 3, 55, 1), black);
+  background-attachment: fixed;
+}
+/* Color de todas las fonts de la web*/
+* {
+  color: #e3dac9;
 }
 
+/* Disposición flex de todos los elementos Div de la seccion de Tame imapla */
 section.Tame-Impala > div {
   display: flex;
 }
-
+/* Adición del border radius a la imagen de Tame Impala*/
+#impala-present-image {
+  border-radius: 30px;
+}
+/* Customizacion del contenedor donde se encuentra toda la información Tame Impala*/
+.band-container-impala {
+  border-radius: 25px;
+  border: 1px solid rgba(131, 84, 158, 0.01);
+  margin: 2px;
+  background-color: rgba(131, 84, 158, 0.4);
+  margin-left: 100px;
+  width: 800px;
+  height: 288px;
+}
+/* Customizacion del texto que introduce al artista*/
 p.band-description {
   margin-top: 20px;
   margin-left: 20px;
@@ -37,11 +56,32 @@ p.band-description {
   line-height: 2.5;
   font-size: 20px;
 }
-
-#impala-present-image {
-  border-radius: 30px;
+/* Customizacion flex donde se encuentra la palabra "Genre" y todos los generos */
+.flex-genres-box {
+  display: flex;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 32px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: Rockwell;
 }
+/* Customizacion de la palabra "Genre"*/
+.genres-text {
+  width: 17%;
+  font-size: 20px;
+}
+/* Customizacion del Flexbox donde se encuentra la lista de generos*/
+.genres-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: flex-start;
 
+  font-size: 16px;
+}
+/* Customizacion de los generos individuales de cada artista */
 span.band-genres {
   height: 15px;
   margin-bottom: 5px;
@@ -53,46 +93,12 @@ span.band-genres {
   background-color: rgba(131, 84, 158, 0.4);
 }
 
-.flex-genres-box {
-  display: flex;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 32px;
-  text-align: justify;
-  text-justify: inter-word;
-  font-family: Rockwell;
-  /*   flex-wrap: wrap;
- */
-}
-
-.genres-text {
-  width: 17%;
-  font-size: 20px;
-}
-
-.genres-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: flex-start;
-
-  font-size: 16px;
-}
-
-.band-container-impala {
-  border-radius: 25px;
-  border: 1px solid rgba(131, 84, 158, 0.01);
-  margin: 2px;
-  background-color: rgba(131, 84, 158, 0.4);
-  margin-left: 100px;
-  width: 800px;
-  height: 288px;
-}
+/* Customizacion del H2 "Albums & Merch"*/
 h2.Albums-Merch-Title {
   font-family: Rockwell;
   margin-top: 50px;
 }
+/* Customizacion del cubo donde se encuentra toda la Merch y los albums*/
 .Albums-Merch-cube {
   border-radius: 25px;
   border: 1px solid rgba(131, 84, 158, 0.01);
@@ -101,6 +107,7 @@ h2.Albums-Merch-Title {
   width: 1415px;
   height: 380px;
 }
+/* Customizacion del Flexbox donde se encuentran los albums y la merch*/
 .Albums-Merch-Flex {
   margin-top: 30px;
   display: flex;
@@ -111,6 +118,7 @@ h2.Albums-Merch-Title {
   width: 100%;
   height: 100%;
 }
+/* Customizacion de las imagen de los productos donde se encuentran los productos*/
 .AlMerch-Photos {
   border-radius: 5px;
   width: 150px;
@@ -119,6 +127,7 @@ h2.Albums-Merch-Title {
   justify-content: center;
   margin: 0px;
 }
+/* Customizacion de la imagen de "Rushium Pen and Pad"*/
 .rushium-img {
   border-radius: 5px;
   width: 150px;
@@ -127,40 +136,13 @@ h2.Albums-Merch-Title {
   justify-content: center;
   margin-left: 25px;
 }
-.under-dark-img {
-  border-radius: 5px;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  margin-left: 55px;
-}
-.remix-img {
-  border-radius: 5px;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  margin-left: 80px;
-}
-.tee-img {
-  border-radius: 5px;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  margin-left: 20px;
-}
-
-.Desc-carrito {
-  display: flex;
-  justify-content: center;
-}
+/* Customizacion de los nombres de cada producto*/
 .nombre-producto {
   text-align: center;
   font-family: Rockwell;
   margin-bottom: 5px;
 }
+/* Customizacion del precio de cada producto*/
 .precio {
   font-family: Rockwell;
   font-size: 18px;
@@ -169,6 +151,12 @@ h2.Albums-Merch-Title {
   font-weight: bold;
   margin-bottom: 0px;
 }
+/* Posicionamiento de los botones de "Add to cart"*/
+.btnwrap {
+  text-align: center;
+  margin-top: 5px;
+}
+/* Customizacion de los botones "add to cart"*/
 .button {
   border: none;
   font-family: Rockwell;
@@ -185,14 +173,20 @@ h2.Albums-Merch-Title {
   background-color: rgba(131, 84, 158, 0.4);
   border-radius: 25px;
 }
-.btnwrap {
-  text-align: center;
-  margin-top: 5px;
-}
 
+/* Disposición flex de todos los elementos Div de la seccion de Monolink */
 section.Monolink > div {
   display: flex;
 }
+/* Customizacion de la imagen 1 de Monolink que aparece cuando la pagina está en modo Desktop*/
+.Monolink1 {
+  border-radius: 30px;
+}
+/* Quito la imagen 2 de Monolink para que no aparezca cuando está en modo Desktop*/
+.Monolink2 {
+  display: none;
+}
+/* Customizacion del contenedor donde se encuentra toda la información de Monolink*/
 .band-container-monolink {
   border-radius: 25px;
   border: 1px solid rgba(131, 84, 158, 0.01);
@@ -202,13 +196,45 @@ section.Monolink > div {
   width: 800px;
   height: 300px;
 }
-.Monolink1 {
-  border-radius: 30px;
-}
-.Monolink2 {
-  display: none;
+/* Customizacion de la imagen del álbum "Under Darkening Skies"*/
+.under-dark-img {
+  border-radius: 5px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  margin-left: 55px;
 }
 
+/* Customizacion de de la imagen del álbum "Return to the Oz"*/
+.remix-img {
+  border-radius: 5px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  margin-left: 80px;
+}
+/* Customizacion del <br> UNDER DARKENING <br class="break1"> SKIES <br> VINYL</h3> y el siguiente para que no aparezca en modo Desktop*/
+.break1 {
+  display: none;
+}
+/* Customizacion de  la imagen de la remera de Monolink"*/
+.tee-img {
+  border-radius: 5px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+/*.Desc-carrito {
+  display: flex;
+  justify-content: center;
+}*/
+
+/* Customizacion del titulo "CART" está en modo Desktop*/
 .carrito-titulo {
   font-family: Rockwell;
   font-weight: bold;
@@ -218,8 +244,9 @@ section.Monolink > div {
   margin-top: 60px;
   margin-bottom: 40px;
   border-bottom: 10px rgba(131, 84, 158, 0.4);
+  width: 1200px;
 }
-
+/* Customizacion de los titulos "ITEM" "PRICE" y "QUANTITY" del carrito*/
 .carr-tit {
   font-family: Rockwell;
   font-weight: bold;
@@ -227,6 +254,7 @@ section.Monolink > div {
   color: #e3dac9;
   margin-bottom: 20px;
 }
+/* Customizacion de las columnas del carrito, el carrito está divido en 3 columna donde se incluyen los titulos de las columnas y los items que se agregan al carrito*/
 .carr-col {
   display: flex;
   align-items: center;
@@ -236,25 +264,15 @@ section.Monolink > div {
   margin-top: 10px;
   border-bottom: 10px rgba(131, 84, 158, 0.4);
 }
+/* Customizacion de las filas del carrito*/
 .carr-fila {
   display: flex;
 }
+/* Customizacion de que tanto espacio ocupa el área del ITEM*/
 .carr-prod {
   width: 50%;
 }
-
-.carr-precio {
-  width: 20%;
-  font-size: 20px;
-  color: #e3dac9;
-  font-family: Rockwell;
-  font-weight: bold;
-}
-
-.carr-cant {
-  width: 30%;
-}
-
+/* Customizacion de la frase de cada ITEM en el carrito ej: AMNIOTIC VINYL*/
 .carr-prod-tit {
   color: #e3dac9;
   margin-left: 20px;
@@ -262,32 +280,31 @@ section.Monolink > div {
   font-family: Rockwell;
   font-weight: bold;
 }
+/* Customizacion de la IMAGEN de cada ITEM en el carrito ej: IMAGEN DE AMNIOTIC VINYL*/
 .carr-prod-img {
   width: 100px;
   height: auto;
   border-radius: 15px;
   border-bottom: 10px rgba(131, 84, 158, 0.4);
 }
-.btn-danger {
-  color: white;
-  background-color: #f75e5e;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  height: 30px;
+/* Customizacion del segmento PRECIO, definiendo cuanto espacio ocupa de la pantalla y el formateo del precio*/
+.carr-precio {
+  width: 20%;
+  font-size: 20px;
   font-family: Rockwell;
+  font-weight: bold;
 }
-
-.btn-danger:hover {
-  background-color: #cc4c4c;
+/* Customizacion del segmento CANTIDAD, definiendo cuanto espacio ocupa de la pantalla*/
+.carr-cant {
+  width: 30%;
 }
-
+/* Customizacion del cubo donde aparece la cantidad de iems a comprar, le saco las flechas del cubo que viene por default*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
+/*  Customizacion del cuadrado donde aparece la cantidad de producto a comprar*/
 .carr-cant-input {
   border: 1px solid rgba(131, 84, 158, 0.01);
   height: 40px;
@@ -300,71 +317,90 @@ input::-webkit-inner-spin-button {
   text-align: center;
   margin-right: 100px;
 }
-.break1 {
-  display: none;
-}
-/*@media only screen and (max-width: 600px){ 
-        #impala-present-image{width: 450px;}
-        .band-complete-tab{  display: flex;
-            flex-direction: row;
-          }
-        }*/
 
-/* Responsive layout - makes a one column-layout instead of two-column layout */
+/* Customizacion del boton REMOVE*/
+.btn-danger {
+  color: white;
+  background-color: #f75e5e;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  height: 30px;
+  font-family: Rockwell;
+}
+
+/* Customizacion del boton REMOVE cuando se pone el mouse encima*/
+.btn-danger:hover {
+  background-color: #cc4c4c;
+}
+
 @media (max-width: 800px) {
-  #Titulo-sitio {
-    width: 500px;
-    justify-content: center;
+  /* Customizacion del Titulo de la pagina*/
+  #title-web-div {
+    width: 1200px;
+    /*justify-content: center;*/
   }
+  /* Customizacion del titulo de la web, centralizar el texto y agrandar el largo*/
+  #title-web {
+    text-align: center;
+    width: 1200px;
+  }
+
+  /* Disposición flex de todos los elementos Div de la seccion de Tame Impala y ordenamiento en columnas*/
   .section.Tame-Impala > div {
     display: flex;
     flex-direction: column;
   }
-  .section.Monolink > div {
-    display: flex;
-    flex-direction: column;
+  /* Customizacion del h1 de los nombres de las bandas, cambio de largo y alineacion del texto en el centro */
+  .band-name-div {
+    width: 1200px;
+    text-align: center;
   }
-
-  .band-container-impala {
-    width: 500px;
-    margin-right: 10px;
-    margin-left: 10px;
-    height: 300px;
-  }
+  /* Customizacion del DIV  donde se encuentra h1 de las bandas, cambio de largo y alineacion del texto en el centro  y margenes*/
   .band-name {
     margin-top: 60px;
     margin-bottom: 40px;
     text-align: center;
     width: 1200px;
   }
-  #title-web {
-    text-align: center;
-    width: 500px;
+
+  /* Customizacion del contenedor de la imagen + descripcion de banda y generos*/
+  .container-complete {
+    margin-left: 90px;
   }
+  /* Cambio de dimensiones y adicion de margen a la imagen de Tame Impala*/
   #impala-present-image {
     width: 500px;
     margin-right: 10px;
     height: 300px;
   }
-  .Monolink1 {
-    display: none;
+  /* Cambio dedimensiones y adicion de margenes al contenedor donde se encuentra toda la información Tame Impala*/
+  .band-container-impala {
+    width: 500px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 300px;
   }
-
-  .Monolink2 {
-    display: block;
-    border-radius: 30px;
+  /* Customizacion del DIV que contiene H2 "Albums & Merch"*/
+  .Tit-merch {
+    width: 1200px;
+    text-align: center;
   }
+  /* Customizacion del H2 "Albums & Merch"*/
   .Albums-Merch-Title {
     width: 1200px;
   }
+
+  /* Customizacion del cubo donde se encuentra toda la Merch y los albums, adicion de margenes y cambio de dimensiones*/
   .Albums-Merch-cube {
     margin-left: 90px;
     width: 1000px;
     height: 800px;
   }
+
+  /* Customizacion del Flexbox donde se encuentran los albums y la merch*/
   .Albums-Merch-Flex {
     margin-left: 150px;
-
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
@@ -373,6 +409,22 @@ input::-webkit-inner-spin-button {
     width: 750px;
     height: 800px;
   }
+
+  /* Disposición flex de todos los elementos Div de la seccion de Monolink y ordenamiento en columnas*/
+  .section.Monolink > div {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Quito la imagen 1 de Monolink para que no aparezca cuando está en modo Mobile*/
+  .Monolink1 {
+    display: none;
+  }
+  /* Aplico el display para la imagen 2 de Monolink para que aparezca cuando está en modo Mobile*/
+  .Monolink2 {
+    display: block;
+    border-radius: 30px;
+  }
+  /* Cambio dedimensiones y adicion de margenes al contenedor donde se encuentra toda la información Monolink*/
   .band-container-monolink {
     border-radius: 25px;
     border: 1px solid rgba(131, 84, 158, 0.01);
@@ -382,19 +434,14 @@ input::-webkit-inner-spin-button {
     width: 500px;
     height: 360px;
   }
-  .Tit-merch {
+  /* h1.bandname {
     width: 1200px;
-    text-align: center;
-  }
-  h1.bandname {
-    width: 1200px;
-  }
-  .container-complete {
-    margin-left: 90px;
-  }
+  }*/
+  /* Customizacion del <br> UNDER DARKENING <br class="break1"> SKIES <br> VINYL</h3> y el siguiente para que aparezca en modo Mobile*/
   .break1 {
     display: block;
   }
+  /* Customizacion de la imagen del álbum "Under Darkening Skies", cambio el margen de la izquierda*/
   .under-dark-img {
     border-radius: 5px;
     width: 150px;
@@ -403,6 +450,7 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     margin-left: 30px;
   }
+  /* Customizacion de de la imagen del álbum "Return to the Oz", cambio de margenes*/
   .remix-img {
     border-radius: 5px;
     width: 150px;
@@ -411,18 +459,15 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     margin-left: 10px;
   }
-  .band-name-div {
-    width: 1200px;
-    text-align: center;
-  }
+  /* Customizacion del titulo "CART" está en modo Mobile,cambio de largo*/
   .carrito-titulo {
     width: 1200px;
     text-align: center;
   }
+  /* Customizacion de las filas del carrito, cambio del largo y agrego margen izquierdo*/
   .carr-fila {
     display: flex;
     margin-left: 90px;
     width: 1125px;
-    
   }
 }
