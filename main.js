@@ -1,20 +1,19 @@
 // lista con items
 var items = []
-
+console.log(items)
 
 //agregar items
-//monitoreo clicks en botones
-var addToCartButtons = document.querySelectorAll(".add-to-cart");
+var addToCartButtons = document.querySelectorAll(".add-to-cart"); //Seleccino todos los elementos con la clase .add-to-cart
 
-addToCartButtons.forEach(function (button) {
+addToCartButtons.forEach(function (button) { //Iteracion de cada uno de los elementos con la clase .add-to-cart
   button.addEventListener("click", function (event) {
     //obtengo items del html
-    var clickedButton = event.target;
-    var parentContainer = clickedButton.parentNode.parentNode;    
+    var clickedButton = event.target; //Obtengo el elemento HTML que activo el boton
+    var parentContainer = clickedButton.parentNode.parentNode; //Obtengo el contenedor padre del padre que contiene toda la info del elemento   
 
     //me fijo si ya hay en el carrito
-    var productName = parentContainer.querySelector(".nombre-producto").textContent;
-    var presentInCart = items.find(item => item.name === productName);
+    var productName = parentContainer.querySelector(".nombre-producto").textContent; //Busco el nombre del prodto
+    var presentInCart = items.find(item => item.name === productName); //comparar el nombre del producto con cada elemento del arreglo
 
     if(presentInCart){
         //si está en el carrito, sumo una unidad
@@ -37,6 +36,7 @@ addToCartButtons.forEach(function (button) {
 
     //actualizo carrito
     updateCart()
+    
   });
 });
 
@@ -45,10 +45,13 @@ addToCartButtons.forEach(function (button) {
 
 //actualizar items en el carrito
 function updateCart(){
-    //eligo carrito
-    var cartElement = document.querySelector(".carr-items");
+    //elijo carrito
+    var cartElement = document.querySelector(".carr-items"); //Se selecciona el elemento HTML con la clase .carr-items
+                                                            // y se almacena en la variable cartElement
     //vacio carrito
-    cartElement.innerHTML = "";
+    console.log(cartElement)
+    cartElement.innerHTML = ""; //Se vacía el contenido del carrito estableciendo cartElement.innerHTML (setea el contenido HTML
+                                // del elemento cartElement)
     //armo html y lo meto
     items.forEach(function (item) {
         var html = `<div class="carr-fila">
@@ -63,6 +66,9 @@ function updateCart(){
                         </div>
                     </div>`
         cartElement.innerHTML += html
+        console.log(cartElement.innerHTML)
+        
+        console.log(cartElement)
     })
 
     //add remove functionality
@@ -80,14 +86,13 @@ function updateCart(){
         items.find(function (item) {
             if(item.name === productName){
                 var index = items.indexOf(item)
-                items.splice(0, 1);
+                items.splice(index, 1);
             }
         });
 
         //actualizo carrito
         updateCart()
 
-        console.log(items)
       });
     });
 
